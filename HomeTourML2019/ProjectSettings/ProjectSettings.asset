@@ -142,7 +142,7 @@ PlayerSettings:
     lumin:
       depthFormat: 0
       frameTiming: 2
-      enableGLCache: 0
+      enableGLCache: 1
       glCacheMaxBlobSize: 524288
       glCacheMaxFileSize: 8388608
     oculus:

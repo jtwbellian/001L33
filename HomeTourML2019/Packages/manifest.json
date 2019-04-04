@@ -6,7 +6,10 @@
     "com.unity.package-manager-ui": "2.1.1",
     "com.unity.purchasing": "2.0.1",
     "com.unity.render-pipelines.lightweight": "5.7.2",
+<<<<<<< HEAD
     "com.unity.shadergraph": "5.7.2",
+=======
+>>>>>>> f696b493d3d65af41f151a640027aa00977326c8
     "com.unity.textmeshpro": "2.0.0",
     "com.unity.timeline": "1.0.0",
     "com.unity.xr.legacyinputhelpers": "2.0.2",
