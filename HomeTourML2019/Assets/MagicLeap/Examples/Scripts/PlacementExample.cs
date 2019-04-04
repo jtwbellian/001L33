@@ -28,7 +28,7 @@ namespace MagicLeap
         private ControllerConnectionHandler _controllerConnectionHandler = null;
 
         [SerializeField, Tooltip("The placement objects that are used in the scene.")]
-        private GameObject[] _placementPrefabs = null;
+        public GameObject[] _placementPrefabs = null;
 
         private Placement _placement = null;
         private PlacementObject _placementObject = null;
