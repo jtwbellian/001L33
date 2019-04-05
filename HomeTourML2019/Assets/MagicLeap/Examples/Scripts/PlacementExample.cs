@@ -124,8 +124,18 @@ namespace MagicLeap
             {
                 GameObject previewObject = Instantiate(_placementPrefabs[index]);
 
+
+                /*GameObject previewNext = (index + 1 < _placementPrefabs.Length) ? Instantiate(_placementPrefabs[index + 1]) : Instantiate(_placementPrefabs[0]);
+                GameObject previewPrevious = (index - 1 < 0) ? Instantiate(_placementPrefabs[index - 1]) : Instantiate(_placementPrefabs[_placementPrefabs.Length - 1]);
+
+                previewNext.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                previewPrevious.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                */
+
+
                 // Detect all children in the preview and set children to ignore raycast.
                 Collider[] colliders = previewObject.GetComponents<Collider>();
+
                 for (int i = 0; i < colliders.Length; ++i)
                 {
                     colliders[i].enabled = false;
@@ -137,6 +147,8 @@ namespace MagicLeap
                 if (placementObject == null)
                 {
                     Destroy(previewObject);
+                    //Destroy(previewNext);
+                    //Destroy(previewPrevious);
                     Debug.LogError("Error: PlacementExample.placementObject is not set, disabling script.");
 
                     enabled = false;

@@ -4,10 +4,12 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: WillNotFit
-  m_Shader: {fileID: 4800000, guid: 8fdf167583ae0554cbdf9223f0741e08, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 11e0099aaf6e4d740bc24e0841a91acf,
+    type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -55,6 +57,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_C1A02A22: 0
+    - Vector1_C6D6E723: 0.24
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -72,5 +76,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+    - Color_18AA495D: {r: 0.9811321, g: 0.058786213, b: 0, a: 0}
     - _Color: {r: 1, g: 0, b: 0, a: 0.39215687}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
