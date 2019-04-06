@@ -78,7 +78,17 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Aluminum Finish.001
+    second: {fileID: 2100000, guid: 759190585aeac104da438ab026f14086, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Electronics
+    second: {fileID: 2100000, guid: 85faa352bbbe19945952e576d46952e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Electronics.001
     second: {fileID: 2100000, guid: 85faa352bbbe19945952e576d46952e3, type: 2}
   - first:
       type: UnityEngine:Material
@@ -88,13 +98,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Glass.001
+    second: {fileID: 2100000, guid: bbf57147ae4fb8a4ba0b8c28b56c29d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Metal1
     second: {fileID: 2100000, guid: 4cf7fbf7da6f0624c9f30c191ab56f03, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Metal1.001
+    second: {fileID: 2100006, guid: d1ab507200d05f6438cc0981ec1c56de, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: OvenRaack
     second: {fileID: 2100006, guid: d1ab507200d05f6438cc0981ec1c56de, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OvenRaack.001
+    second: {fileID: 2100000, guid: 4cf7fbf7da6f0624c9f30c191ab56f03, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
