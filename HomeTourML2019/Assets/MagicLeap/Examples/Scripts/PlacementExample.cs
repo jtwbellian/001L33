@@ -28,16 +28,23 @@ namespace MagicLeap
         private ControllerConnectionHandler _controllerConnectionHandler = null;
 
         [SerializeField, Tooltip("The placement objects that are used in the scene.")]
+
         public GameObject[] _placementPrefabs = null;
 
+        //public Transform prevObjLoc = null;
+        //public Transform nextObjLoc = null;
+        private MLInputController _controller;
         private Placement _placement = null;
         private PlacementObject _placementObject = null;
+        //private GameObject _previousObj = null;
+        //private GameObject _nextObj = null;
         private int _placementIndex = 0;
         #endregion
 
         #region Unity Methods
         void Start()
         {
+
             if (_controllerConnectionHandler == null)
             {
                 Debug.LogError("Error: PlacementExample._controllerConnectionHandler is not set, disabling script.");
@@ -47,8 +54,10 @@ namespace MagicLeap
 
             _placement = GetComponent<Placement>();
 
-            MLInput.OnControllerButtonDown += HandleOnButtonDown;
+            //MLInput.OnControllerButtonDown += HandleOnButtonDown;
             MLInput.OnTriggerDown += HandleOnTriggerDown;
+
+            _controller = MLInput.GetController(MLInput.Hand.Left);
 
             StartPlacement();
         }
@@ -60,12 +69,29 @@ namespace MagicLeap
             {
                 _placementObject.transform.position = _placement.AdjustedPosition - _placementObject.LocalBounds.center;
                 _placementObject.transform.rotation = _placement.Rotation;
+                //_nextObj.transform.position = prevObjLoc.position;
+
             }
 
             if(Input.GetKeyDown(KeyCode.N))
             {
                 NextPlacementObject();
             }
+
+            // Cycle with radial gesture 
+            if (_controller.TouchpadGesture.Type == MLInputControllerTouchpadGestureType.RadialScroll &&
+                _controller.TouchpadGestureState != MLInputControllerTouchpadGestureState.End)
+            {
+                if (_controller.TouchpadGesture.Direction == MLInputControllerTouchpadGestureDirection.Clockwise)
+                {
+                    NextPlacementObject();
+                }
+                else if (_controller.TouchpadGesture.Direction == MLInputControllerTouchpadGestureDirection.CounterClockwise)
+                {
+                    LastPlacementObject();
+                }
+            }
+
         }
 
         void OnDestroy()
@@ -117,6 +143,8 @@ namespace MagicLeap
             if (_placementObject != null)
             {
                 Destroy(_placementObject.gameObject);
+                //Destroy(_previousObj.gameObject);
+                //Destroy(_nextObj.gameObject);
             }
 
             // Create the next preview instance.
@@ -125,15 +153,14 @@ namespace MagicLeap
                 GameObject previewObject = Instantiate(_placementPrefabs[index]);
 
 
-                /*GameObject previewNext = (index + 1 < _placementPrefabs.Length) ? Instantiate(_placementPrefabs[index + 1]) : Instantiate(_placementPrefabs[0]);
-                GameObject previewPrevious = (index - 1 < 0) ? Instantiate(_placementPrefabs[index - 1]) : Instantiate(_placementPrefabs[_placementPrefabs.Length - 1]);
+                //_nextObj = (index + 1 < _placementPrefabs.Length) ? Instantiate(_placementPrefabs[index + 1]) : Instantiate(_placementPrefabs[0]);
+                //_previousObj = (index - 1 > 0) ? Instantiate(_placementPrefabs[index - 1]) : Instantiate(_placementPrefabs[_placementPrefabs.Length - 1]);
 
-                previewNext.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-                previewPrevious.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-                */
-
+                //_nextObj.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                //_previousObj.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
 
                 // Detect all children in the preview and set children to ignore raycast.
+
                 Collider[] colliders = previewObject.GetComponents<Collider>();
 
                 for (int i = 0; i < colliders.Length; ++i)
@@ -179,6 +206,21 @@ namespace MagicLeap
                 if (_placementIndex >= _placementPrefabs.Length)
                 {
                     _placementIndex = 0;
+                }
+            }
+
+            StartPlacement();
+        }
+
+        public void LastPlacementObject()
+        {
+            if (_placementPrefabs != null)
+            {
+                _placementIndex --;
+
+                if (_placementIndex <=0 )
+                {
+                    _placementIndex = _placementPrefabs.Length - 1;
                 }
             }
 

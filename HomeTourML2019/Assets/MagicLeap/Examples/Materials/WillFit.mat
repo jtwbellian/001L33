@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WillFit
-  m_Shader: {fileID: -6465566751694194690, guid: 11e0099aaf6e4d740bc24e0841a91acf,
+  m_Shader: {fileID: -6465566751694194690, guid: d6bf5e2de447fd447ad1010c2be3fa5d,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -84,6 +84,7 @@ Material:
     - PointSize: 5
     - Vector1_C1A02A22: 0.15
     - Vector1_C6D6E723: 0.5
+    - Vector1_F6D3C79D: 0.97
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -125,6 +126,7 @@ Material:
     - _VignettePower: 13
     - _ZWrite: 1
     m_Colors:
+    - Color_17239549: {r: 0, g: 0.3584906, b: 0.020950777, a: 0}
     - Color_18AA495D: {r: 0.20561247, g: 0.8018868, b: 0.2004717, a: 0}
     - _BackgroundColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
