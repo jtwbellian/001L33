@@ -4,10 +4,12 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: WillFit
-  m_Shader: {fileID: 4800000, guid: 8fdf167583ae0554cbdf9223f0741e08, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: d6bf5e2de447fd447ad1010c2be3fa5d,
+    type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -18,6 +20,14 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _BackgroundTex:
+        m_Texture: {fileID: 2800000, guid: edcd24815d0314639a6ad2bebbdd4c4e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0.95, y: 0.48}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -38,6 +48,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _FilterTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ForegroundTex:
+        m_Texture: {fileID: 2800000, guid: d287cec0865362d43ac54fe4e7126f48, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0.33, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -54,23 +72,67 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - PointSize: 5
+    - Vector1_C1A02A22: 0.15
+    - Vector1_C6D6E723: 0.5
+    - Vector1_F6D3C79D: 0.97
+    - _AlphaClip: 0
+    - _Blend: 0
     - _BumpScale: 1
+    - _Cull: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Gap: 0.1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
+    - _GlossinessSource: 0
     - _GlossyReflections: 1
+    - _MaxUV: 0.94
     - _Metallic: 0
+    - _MinUV: 0.06
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _SampleGI: 0
+    - _Shininess: 0
+    - _Smoothness: 0.5
+    - _SmoothnessSource: 0
     - _SmoothnessTextureChannel: 0
+    - _SpecSource: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Surface: 0
+    - _Threshold: 1
     - _UVSec: 0
+    - _UseAoMap: 0
+    - _UseColorMap: 0
+    - _UseEmissiveMap: 0
+    - _UseMetallicMap: 0
+    - _UseNormalMap: 0
+    - _UseRoughnessMap: 0
+    - _VignetteMode: 0
+    - _VignettePower: 13
     - _ZWrite: 1
     m_Colors:
+    - Color_17239549: {r: 0, g: 0.3584906, b: 0.020950777, a: 0}
+    - Color_18AA495D: {r: 0.20561247, g: 0.8018868, b: 0.2004717, a: 0}
+    - _BackgroundColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _Color: {r: 0, g: 1, b: 0, a: 0.39215687}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ForegroundColor: {r: 0, g: 0, b: 0, a: 0}
+    - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+    - _UvOffset: {r: 0, g: 0, b: 0, a: 0}
+    - _UvTiling: {r: 1, g: 1, b: 0, a: 0}
