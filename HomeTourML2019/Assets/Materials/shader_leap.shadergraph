@@ -43,9 +43,6 @@
             "JSONnodeData": "{\n    \"m_Name\": \"Vector1 (2)\",\n    \"m_GeneratePropertyBlock\": true,\n    \"m_Guid\": {\n        \"m_GuidSerialized\": \"caa037fd-466f-408a-bcb3-2cc3a89d71f3\"\n    },\n    \"m_DefaultReferenceName\": \"Vector1_A87255FB\",\n    \"m_OverrideReferenceName\": \"\",\n    \"m_Value\": 0.0,\n    \"m_FloatType\": 1,\n    \"m_RangeValues\": {\n        \"x\": 0.0,\n        \"y\": 1.0\n    },\n    \"m_Hidden\": false\n}"
         }
     ],
-    "m_GUID": {
-        "m_GuidSerialized": "9868b83d-065d-42c9-a136-8b9b3d782439"
-    },
     "m_SerializableNodes": [
         {
             "typeInfo": {
