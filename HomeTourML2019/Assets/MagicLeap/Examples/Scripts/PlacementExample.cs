@@ -12,6 +12,7 @@
 
 using UnityEngine;
 using UnityEngine.XR.MagicLeap;
+using UnityEngine.UI;
 
 namespace MagicLeap
 {
@@ -20,6 +21,16 @@ namespace MagicLeap
     /// objects and see a visual representation of a valid or invalid location.
     /// Once a valid location has been determined the user may place the content.
     /// </summary>
+    /// 
+
+    [System.Serializable]
+    public class Category
+    {
+        public Sprite pic;
+        public GameObject[] prefabs;
+        public Color color;
+    }
+
     [RequireComponent(typeof(Placement))]
     public class PlacementExample : MonoBehaviour
     {
@@ -29,7 +40,14 @@ namespace MagicLeap
 
         [SerializeField, Tooltip("The placement objects that are used in the scene.")]
 
-        public GameObject[] _placementPrefabs = null;
+
+        //public GameObject[] _placementPrefabs = null;
+
+        public Category[] categories = null;
+        public int currCat = 0;
+
+        public Image categoryImage;
+        public MeshRenderer cursorMesh;
 
         //public Transform prevObjLoc = null;
         //public Transform nextObjLoc = null;
@@ -54,7 +72,7 @@ namespace MagicLeap
 
             _placement = GetComponent<Placement>();
 
-            //MLInput.OnControllerButtonDown += HandleOnButtonDown;
+            MLInput.OnControllerButtonDown += HandleOnButtonDown;
             MLInput.OnTriggerDown += HandleOnTriggerDown;
 
             _controller = MLInput.GetController(MLInput.Hand.Left);
@@ -109,12 +127,26 @@ namespace MagicLeap
         /// <param name="button">The button that is being pressed.</param>
         private void HandleOnButtonDown(byte controllerId, MLInputControllerButton button)
         {
-            if (_controllerConnectionHandler.IsControllerValid() && _controllerConnectionHandler.ConnectedController.Id == controllerId &&
+            /*if (_controllerConnectionHandler.IsControllerValid() && _controllerConnectionHandler.ConnectedController.Id == controllerId &&
                 button == MLInputControllerButton.Bumper)
             {
                 NextPlacementObject();
+            }*/
+            if (currCat < categories.Length - 1)
+            {
+                currCat++;
             }
+            else
+                currCat = 0;
+
+            categoryImage.sprite = categories[currCat].pic;
+            cursorMesh.material.SetColor("_Color", categories[currCat].color);
+            _placementIndex = 0;
+
+            StartPlacement();
+
         }
+
 
         private void HandleOnTriggerDown(byte controllerId, float pressure)
         {
@@ -123,9 +155,10 @@ namespace MagicLeap
 
         private void HandlePlacementComplete(Vector3 position, Quaternion rotation)
         {
-            if (_placementPrefabs != null && _placementPrefabs.Length > _placementIndex)
+            
+            if (categories[currCat].prefabs != null && categories[currCat].prefabs.Length > _placementIndex)
             {
-                GameObject content = Instantiate(_placementPrefabs[_placementIndex]);
+                GameObject content = Instantiate(categories[currCat].prefabs[_placementIndex]);
 
                 content.transform.position = position;
                 content.transform.rotation = rotation;
@@ -148,9 +181,9 @@ namespace MagicLeap
             }
 
             // Create the next preview instance.
-            if (_placementPrefabs != null && _placementPrefabs.Length > index)
+            if (categories[currCat].prefabs != null && categories[currCat].prefabs.Length > index)
             {
-                GameObject previewObject = Instantiate(_placementPrefabs[index]);
+                GameObject previewObject = Instantiate(categories[currCat].prefabs[index]);
 
 
                 //_nextObj = (index + 1 < _placementPrefabs.Length) ? Instantiate(_placementPrefabs[index + 1]) : Instantiate(_placementPrefabs[0]);
@@ -200,10 +233,10 @@ namespace MagicLeap
 
         public void NextPlacementObject()
         {
-            if (_placementPrefabs != null)
+            if (categories[currCat].prefabs != null)
             {
                 _placementIndex++;
-                if (_placementIndex >= _placementPrefabs.Length)
+                if (_placementIndex >= categories[currCat].prefabs.Length)
                 {
                     _placementIndex = 0;
                 }
@@ -214,13 +247,13 @@ namespace MagicLeap
 
         public void LastPlacementObject()
         {
-            if (_placementPrefabs != null)
+            if (categories[currCat].prefabs != null)
             {
                 _placementIndex --;
 
                 if (_placementIndex <=0 )
                 {
-                    _placementIndex = _placementPrefabs.Length - 1;
+                    _placementIndex = categories[currCat].prefabs.Length - 1;
                 }
             }
 
