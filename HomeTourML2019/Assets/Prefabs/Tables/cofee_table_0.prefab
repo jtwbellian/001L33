@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 1963770275585128596}
   - component: {fileID: 1963770275582228660}
   - component: {fileID: 1963770275583359604}
+  - component: {fileID: 2822171068945671173}
+  - component: {fileID: 6764496577842048149}
   m_Layer: 0
-  m_Name: cofee_table
+  m_Name: cofee_table_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,7 +60,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: c54418505cbc94047906a6e1155f0ceb, type: 2}
-  - {fileID: 2100000, guid: 1a1cc05d8a0e33942a7dc2a496729ccb, type: 2}
+  - {fileID: 2100000, guid: adbdf79b90ebc734daaffcb276e8ea85, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,3 +80,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &2822171068945671173
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963770275585549492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9908042, y: 0.3035162, z: 0.9908043}
+  m_Center: {x: -0.01161015, y: 0.15221348, z: -0.01813434}
+--- !u!114 &6764496577842048149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963770275585549492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55258bf8d8d0d614e87da5568a301056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allowHorizontal: 1
+  _allowVertical: 0

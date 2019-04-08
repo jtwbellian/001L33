@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 7395153141535266990}
   - component: {fileID: 3938091426761917551}
   - component: {fileID: 6217813915911709068}
+  - component: {fileID: 5113431803218994133}
+  - component: {fileID: 4874318445768882545}
   m_Layer: 0
   m_Name: base.001
   m_TagString: Untagged
@@ -57,8 +59,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7ef5c04278a1d4346996d6837da9078a, type: 2}
-  - {fileID: 2100000, guid: 7ef5c04278a1d4346996d6837da9078a, type: 2}
+  - {fileID: 2100000, guid: 73438f8667fe74047a53cead93892ca3, type: 2}
+  - {fileID: 2100000, guid: 73438f8667fe74047a53cead93892ca3, type: 2}
   - {fileID: 2100000, guid: bc785957913e58d459e0c2b65b4df9bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -79,6 +81,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5113431803218994133
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6257923536288420266}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 34.285652, y: 79.47581, z: 162.61252}
+  m_Center: {x: 16.46989, y: 0.000049591057, z: -2.2022857e-20}
+--- !u!114 &4874318445768882545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6257923536288420266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55258bf8d8d0d614e87da5568a301056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allowHorizontal: 1
+  _allowVertical: 0
 --- !u!1 &7803132988893837608
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7803132988893537544}
   m_Layer: 0
-  m_Name: table_1
+  m_Name: desk_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

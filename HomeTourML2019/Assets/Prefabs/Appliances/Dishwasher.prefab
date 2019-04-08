@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 854906106400139624}
   - component: {fileID: 854906106403531080}
   - component: {fileID: 854906106402565000}
+  - component: {fileID: 4499320584802809283}
+  - component: {fileID: 4145948329485733097}
   m_Layer: 0
   m_Name: Dishwasher
   m_TagString: Untagged
@@ -60,7 +62,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: 491a7a6e5a07b9d42868332f50d31c1a, type: 2}
   - {fileID: 2100000, guid: 168a3aabdd110694dbd03806e4d0d973, type: 2}
   - {fileID: 2100000, guid: c5b36d87231fe854f9498074cfca6caa, type: 2}
-  - {fileID: 2100000, guid: c701db16edee17f44b9284d58d91a0e4, type: 2}
+  - {fileID: 2100000, guid: 491a7a6e5a07b9d42868332f50d31c1a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,3 +82,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &4499320584802809283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854906106400306504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55258bf8d8d0d614e87da5568a301056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allowHorizontal: 1
+  _allowVertical: 0
+--- !u!65 &4145948329485733097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854906106400306504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.67399395, y: 0.9938578, z: 0.79849607}
+  m_Center: {x: 0.012522966, y: 0.49934927, z: 0.049952835}

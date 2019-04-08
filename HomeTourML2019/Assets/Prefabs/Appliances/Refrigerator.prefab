@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8234317072172579090}
   - component: {fileID: 8234317072175446322}
   - component: {fileID: 8234317072174349298}
+  - component: {fileID: 3643765082239197701}
+  - component: {fileID: 1181929902006849928}
   m_Layer: 0
   m_Name: Refrigerator
   m_TagString: Untagged
@@ -80,3 +82,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3643765082239197701
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8234317072172082482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0286584, y: 1.9010669, z: 1.0404716}
+  m_Center: {x: 0.13348173, y: 0.95212716, z: 0.06278442}
+--- !u!114 &1181929902006849928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8234317072172082482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55258bf8d8d0d614e87da5568a301056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allowHorizontal: 1
+  _allowVertical: 0

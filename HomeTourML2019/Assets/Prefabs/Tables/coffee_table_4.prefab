@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4128669859522332487}
   - component: {fileID: 4128669859519432551}
   - component: {fileID: 4128669859520562599}
+  - component: {fileID: 2816463652367094978}
+  - component: {fileID: 6595962552897702426}
   m_Layer: 0
   m_Name: coffee_table_4
   m_TagString: Untagged
@@ -57,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1a1cc05d8a0e33942a7dc2a496729ccb, type: 2}
+  - {fileID: 2100000, guid: 6e6bbd893492e0943bb3b9bd17c68dda, type: 2}
   - {fileID: 2100000, guid: 491a7a6e5a07b9d42868332f50d31c1a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -78,3 +80,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2816463652367094978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4128669859522763623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55258bf8d8d0d614e87da5568a301056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allowHorizontal: 1
+  _allowVertical: 0
+--- !u!65 &6595962552897702426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4128669859522763623}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.89733315, y: 0.42652363, z: 0.8964169}
+  m_Center: {x: 0.004884973, y: 0.21326175, z: 0.009417459}

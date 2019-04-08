@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6629610390923991180}
   - component: {fileID: 7214953485279941408}
   - component: {fileID: 3971084828603330521}
+  - component: {fileID: 1234091072298148981}
+  - component: {fileID: 7474866068188012055}
   m_Layer: 0
   m_Name: couch_full
   m_TagString: Untagged
@@ -57,10 +59,10 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a115328a42eb5a54882639ad40dee75d, type: 2}
-  - {fileID: 2100000, guid: 2d7b706e6617232489ba2d442f2674a1, type: 2}
-  - {fileID: 2100000, guid: 8038922d7b38b78408e0ece9abbea486, type: 2}
-  - {fileID: 2100000, guid: b548a5f872b121345b1996180cd52590, type: 2}
+  - {fileID: 2100000, guid: 051ec947690563f4492787984cccd248, type: 2}
+  - {fileID: 2100000, guid: 051ec947690563f4492787984cccd248, type: 2}
+  - {fileID: 2100000, guid: 5ccc56ef523fe08499b7e33e252d78bc, type: 2}
+  - {fileID: 2100000, guid: 6e6bbd893492e0943bb3b9bd17c68dda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,3 +82,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1234091072298148981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6629610390924084396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.461236, y: 0.7309196, z: 2.4586837}
+  m_Center: {x: 0.16594225, y: 0.3315643, z: 0.00926888}
+--- !u!114 &7474866068188012055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6629610390924084396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55258bf8d8d0d614e87da5568a301056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allowHorizontal: 1
+  _allowVertical: 0

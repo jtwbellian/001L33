@@ -42,6 +42,8 @@ GameObject:
   - component: {fileID: 5244208882450324887}
   - component: {fileID: 5244208882448997813}
   - component: {fileID: 5244208882448031605}
+  - component: {fileID: 3718448443930459520}
+  - component: {fileID: 1072976318905729920}
   m_Layer: 0
   m_Name: wheels
   m_TagString: Untagged
@@ -88,7 +90,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8038922d7b38b78408e0ece9abbea486, type: 2}
+  - {fileID: 2100000, guid: 5ccc56ef523fe08499b7e33e252d78bc, type: 2}
   - {fileID: 2100000, guid: 491a7a6e5a07b9d42868332f50d31c1a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -109,3 +111,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &3718448443930459520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5244208882450022839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55258bf8d8d0d614e87da5568a301056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _allowHorizontal: 1
+  _allowVertical: 0
+--- !u!65 &1072976318905729920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5244208882450022839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 24.419634, y: 43.52432, z: 26.029629}
+  m_Center: {x: -1.0461932, y: 21.662127, z: -0.3878189}
