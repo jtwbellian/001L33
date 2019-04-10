@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 4733763484198136983}
-  - component: {fileID: 7660673152776550428}
-  m_Layer: 0
+  - component: {fileID: 3122687395365682969}
+  m_Layer: 8
   m_Name: plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,9 +27,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.227146, y: 0.3363452, z: 6.7981787}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.006795528}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _allowHorizontal: 1
   _allowVertical: 0
---- !u!65 &7660673152776550428
+--- !u!65 &3122687395365682969
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,5 +104,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 24.232925, y: 24.232931, z: 5.933242}
-  m_Center: {x: 0, y: 1.0164395e-20, z: 0.0000014305118}
+  m_Size: {x: 0.24232921, y: 0.040319517, z: 0.24232925}
+  m_Center: {x: 0, y: 0.024423618, z: 0.01446078}

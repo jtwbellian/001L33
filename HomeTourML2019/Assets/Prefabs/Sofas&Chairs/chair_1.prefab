@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2496608202542135782}
   - component: {fileID: 2432955778909768870}
   - component: {fileID: 77300653197147216}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: metal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2496608202544429830}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chair_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

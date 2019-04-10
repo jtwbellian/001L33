@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 595648418793981084}
   - component: {fileID: 176558824718615411}
   - component: {fileID: 4176136042253602589}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: legs.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3071729032368496509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: corner_sofa
   m_TagString: Untagged
   m_Icon: {fileID: 0}

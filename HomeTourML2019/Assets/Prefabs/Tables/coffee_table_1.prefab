@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3542951198615236112}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: coffee_table_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 466096437407649817}
   - component: {fileID: 2510045604803811549}
   - component: {fileID: 2292781174908965190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: metal.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,8 +90,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73438f8667fe74047a53cead93892ca3, type: 2}
-  - {fileID: 2100000, guid: c54418505cbc94047906a6e1155f0ceb, type: 2}
+  - {fileID: 2100000, guid: 7ef5c04278a1d4346996d6837da9078a, type: 2}
+  - {fileID: 2100000, guid: 1f0a27c43f1f9604bb9c73d444ecfa77, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

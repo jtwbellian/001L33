@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9094799400863443069}
   - component: {fileID: 4854583706724963802}
   - component: {fileID: 1902159088476560794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: metal.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8456904055188418830}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: coffee_table_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

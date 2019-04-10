@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1736476369155954510}
   - component: {fileID: 4074377015773104704}
   - component: {fileID: 4067697591551565268}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,8 +59,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5ccc56ef523fe08499b7e33e252d78bc, type: 2}
-  - {fileID: 2100000, guid: 73438f8667fe74047a53cead93892ca3, type: 2}
+  - {fileID: 2100000, guid: 9d13581e13c6b9d498f481a1479dfd9b, type: 2}
+  - {fileID: 2100000, guid: 7ef5c04278a1d4346996d6837da9078a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1736476369153660332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kitchen_chair_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

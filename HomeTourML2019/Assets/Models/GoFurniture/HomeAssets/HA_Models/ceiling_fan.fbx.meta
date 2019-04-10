@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 15a231b3f6719c04ba45f26b9223bc1c
+guid: 0cd6c459ca1f8244ca3153d0f7181803
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
@@ -54,14 +54,14 @@ ModelImporter:
       takeName: Armature.001|Armature.001|Armature.001|Armature.001|Armature.001|ArmatureAct
       internalID: -3088391465558051993
       firstFrame: 0
-      lastFrame: 29.6
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

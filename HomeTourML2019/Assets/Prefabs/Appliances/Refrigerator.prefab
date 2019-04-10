@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8234317072174349298}
   - component: {fileID: 3643765082239197701}
   - component: {fileID: 1181929902006849928}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Refrigerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
