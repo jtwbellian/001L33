@@ -21,18 +21,38 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: mat_paintingsd
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: f205955076de3fd418791093915b4252,
+    type: 3}
   m_ShaderKeywords: _NORMALMAP
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2050
-  stringTagMap:
-    RenderType: Opaque
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_15B6FCCB:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_4D522327:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_5E31C745:
+        m_Texture: {fileID: 2800000, guid: 2c984916bb079384c81ca0086de3924c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_87419160:
+        m_Texture: {fileID: 2800000, guid: 307c95846f6b8e64db22c5a7bd7fa279, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_E11B0AA1:
+        m_Texture: {fileID: 2800000, guid: 935b60014b869af488f1887788d4ca30, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: 307c95846f6b8e64db22c5a7bd7fa279, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -78,6 +98,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_798F08A: 0
+    - Vector1_9F24A706: 0.052
+    - Vector1_E4AB42DB: 0.601
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -104,6 +127,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - Vector2_1A63D2C0: {r: 1, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 0.9858491, b: 0.9858491, a: 1}
     - _Color: {r: 1, g: 0.9858491, b: 0.9858491, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

@@ -1,84 +1,27 @@
 fileFormatVersion: 2
-guid: a3df22b49dab654498b3b44396a0daa0
+guid: 15a231b3f6719c04ba45f26b9223bc1c
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
   - first:
-      1: 100000
-    second: Armature.001
+      74: -3088391465558051993
+    second: Armature.001|Armature.001|Armature.001|Armature.001|Armature.001|ArmatureAct
   - first:
-      1: 100002
-    second: Bone
+      74: -2897035784111648685
+    second: Armature.001|Armature.001|Armature|Armature|Armature|ArmatureAction|Armature
   - first:
-      1: 100004
-    second: Bone.001
+      74: -7114358233694730880
+    second: Armature.001|Armature.001|Armature|metal.002Action|Armature|metal.002Action
   - first:
-      1: 100006
-    second: Bone.001_end
+      74: 4386694182768337470
+    second: Armature.001|Armature|Armature|ArmatureAction|Armature|ArmatureAction
   - first:
-      1: 100008
-    second: //RootNode
+      74: 2345053505109763553
+    second: Armature.001|FanSpin
   - first:
-      1: 100010
-    second: Cylinder.002
-  - first:
-      4: 400000
-    second: Armature.001
-  - first:
-      4: 400002
-    second: Bone
-  - first:
-      4: 400004
-    second: Bone.001
-  - first:
-      4: 400006
-    second: Bone.001_end
-  - first:
-      4: 400008
-    second: //RootNode
-  - first:
-      4: 400010
-    second: Cylinder.002
-  - first:
-      21: 2100000
-    second: WOOD
-  - first:
-      21: 2100002
-    second: Aluminum Finish
-  - first:
-      21: 2100004
-    second: Glass
-  - first:
-      43: 4300000
-    second: Cylinder.002
-  - first:
-      74: 7400000
-    second: Armature.001|ArmatureAction
-  - first:
-      95: 9500000
-    second: //RootNode
-  - first:
-      137: 13700000
-    second: Cylinder.002
-  - first:
-      41386430: 2186277476908879412
-    second: ImportLogs
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Aluminum Finish
-    second: {fileID: 2100000, guid: b43c4189bbf202e489ba8f76474eeff2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Glass
-    second: {fileID: 2100000, guid: 97dc1090d97f6384ba1d97d7e0800d5d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: WOOD
-    second: {fileID: 2100000, guid: cfe354c5bc416e741b040389724a52cf, type: 2}
+      74: -3748503752103017801
+    second: Armature.001|metal.002Action
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -107,9 +50,38 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature.001|ArmatureAction
-      takeName: Armature.001|ArmatureAction
-      internalID: 7400000
+      name: Armature.001|Armature.001|Armature.001|Armature.001|Armature.001|ArmatureAct
+      takeName: Armature.001|Armature.001|Armature.001|Armature.001|Armature.001|ArmatureAct
+      internalID: -3088391465558051993
+      firstFrame: 0
+      lastFrame: 29.6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.001|Armature.001|Armature|Armature|Armature|ArmatureAction|Armature
+      takeName: Armature.001|Armature.001|Armature|Armature|Armature|ArmatureAction|Armature
+      internalID: -2897035784111648685
       firstFrame: 0
       lastFrame: 14
       wrapMode: 0
@@ -135,10 +107,126 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
-    isReadable: 1
+    - serializedVersion: 16
+      name: Armature.001|Armature.001|Armature|metal.002Action|Armature|metal.002Action
+      takeName: Armature.001|Armature.001|Armature|metal.002Action|Armature|metal.002Action
+      internalID: -7114358233694730880
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.001|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+      takeName: Armature.001|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+      internalID: 4386694182768337470
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.001|FanSpin
+      takeName: Armature.001|FanSpin
+      internalID: 2345053505109763553
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature.001|metal.002Action
+      takeName: Armature.001|metal.002Action
+      internalID: -3748503752103017801
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.125
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -147,7 +235,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -161,13 +249,13 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
@@ -184,7 +272,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.125
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
