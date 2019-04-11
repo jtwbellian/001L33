@@ -1,40 +1,104 @@
 fileFormatVersion: 2
 guid: 5b285b3c693725c4995ec9b2a3eb1496
 ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Controller_Body
-    100004: Controller_FrontButton
-    100006: Controller_MenuButton
-    100008: Controller_Pad
-    100010: Controller_Trigger
-    400000: //RootNode
-    400002: Controller_Body
-    400004: Controller_FrontButton
-    400006: Controller_MenuButton
-    400008: Controller_Pad
-    400010: Controller_Trigger
-    2100000: TouchPad_MAT
-    2100002: Button_MAT
-    2100004: Trigger_MAT
-    2100006: Bumper_MAT
-    2100008: Controller_MAT
-    2300000: Controller_Body
-    2300002: Controller_FrontButton
-    2300004: Controller_MenuButton
-    2300006: Controller_Pad
-    2300008: Controller_Trigger
-    3300000: Controller_Body
-    3300002: Controller_FrontButton
-    3300004: Controller_MenuButton
-    3300006: Controller_Pad
-    3300008: Controller_Trigger
-    4300000: Controller_Pad
-    4300002: Controller_MenuButton
-    4300004: Controller_Trigger
-    4300006: Controller_FrontButton
-    4300008: Controller_Body
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Controller_Body
+  - first:
+      1: 100004
+    second: Controller_FrontButton
+  - first:
+      1: 100006
+    second: Controller_MenuButton
+  - first:
+      1: 100008
+    second: Controller_Pad
+  - first:
+      1: 100010
+    second: Controller_Trigger
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Controller_Body
+  - first:
+      4: 400004
+    second: Controller_FrontButton
+  - first:
+      4: 400006
+    second: Controller_MenuButton
+  - first:
+      4: 400008
+    second: Controller_Pad
+  - first:
+      4: 400010
+    second: Controller_Trigger
+  - first:
+      21: 2100000
+    second: TouchPad_MAT
+  - first:
+      21: 2100002
+    second: Button_MAT
+  - first:
+      21: 2100004
+    second: Trigger_MAT
+  - first:
+      21: 2100006
+    second: Bumper_MAT
+  - first:
+      21: 2100008
+    second: Controller_MAT
+  - first:
+      23: 2300000
+    second: Controller_Body
+  - first:
+      23: 2300002
+    second: Controller_FrontButton
+  - first:
+      23: 2300004
+    second: Controller_MenuButton
+  - first:
+      23: 2300006
+    second: Controller_Pad
+  - first:
+      23: 2300008
+    second: Controller_Trigger
+  - first:
+      33: 3300000
+    second: Controller_Body
+  - first:
+      33: 3300002
+    second: Controller_FrontButton
+  - first:
+      33: 3300004
+    second: Controller_MenuButton
+  - first:
+      33: 3300006
+    second: Controller_Pad
+  - first:
+      33: 3300008
+    second: Controller_Trigger
+  - first:
+      43: 4300000
+    second: Controller_Pad
+  - first:
+      43: 4300002
+    second: Controller_MenuButton
+  - first:
+      43: 4300004
+    second: Controller_Trigger
+  - first:
+      43: 4300006
+    second: Controller_FrontButton
+  - first:
+      43: 4300008
+    second: Controller_Body
   externalObjects: {}
   materials:
     importMaterials: 0
@@ -69,6 +133,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -76,10 +141,13 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -91,10 +159,14 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -104,8 +176,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
