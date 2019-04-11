@@ -29,6 +29,8 @@ namespace UnityEngine.XR.MagicLeap
 
         [Tooltip("The speed at which this object changes its rotation.")]
         public float RotationLerpSpeed = 5f;
+
+        public GameObject instructions;
         #endregion
 
         #region Private Varibles
@@ -37,6 +39,8 @@ namespace UnityEngine.XR.MagicLeap
 
         // The camera this object will be in front of.
         private Camera _camera;
+
+        private MLInputController _controller;
         #endregion
 
         #region Unity Methods
@@ -62,6 +66,9 @@ namespace UnityEngine.XR.MagicLeap
                 enabled = false;
                 return;
             }
+
+
+            _controller = MLInput.GetController(MLInput.Hand.Left);
         }
 
         /// <summary>
@@ -78,6 +85,13 @@ namespace UnityEngine.XR.MagicLeap
             float rotSpeed = Time.deltaTime * RotationLerpSpeed;
             Quaternion rotTo = Quaternion.LookRotation(transform.position - _camera.transform.position);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotTo, rotSpeed);
+
+            if (_controller.IsBumperDown && instructions.activeSelf)
+            {
+                instructions.SetActive(false);
+            }
+
+
         }
         #endregion
     }

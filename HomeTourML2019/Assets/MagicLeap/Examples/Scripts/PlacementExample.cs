@@ -14,6 +14,8 @@ using UnityEngine;
 using UnityEngine.XR.MagicLeap;
 using UnityEngine.UI;
 
+
+
 namespace MagicLeap
 {
     /// <summary>
@@ -34,6 +36,8 @@ namespace MagicLeap
     [RequireComponent(typeof(Placement))]
     public class PlacementExample : MonoBehaviour
     {
+
+        const int ERASER = 6;
         #region Private Variables
         [SerializeField, Tooltip("The controller that is used in the scene to cycle and place objects.")]
         private ControllerConnectionHandler _controllerConnectionHandler = null;
@@ -54,6 +58,8 @@ namespace MagicLeap
         private MLInputController _controller;
         private Placement _placement = null;
         private PlacementObject _placementObject = null;
+        private PlacementObject hitObject = null; 
+
         //private GameObject _previousObj = null;
         //private GameObject _nextObj = null;
         private int _placementIndex = 0;
@@ -86,9 +92,24 @@ namespace MagicLeap
             if (_placementObject != null)
             {
                 _placementObject.transform.position = _placement.AdjustedPosition - _placementObject.LocalBounds.center;
-                _placementObject.transform.rotation = _placement.Rotation;
+                _placementObject.transform.root.rotation = _placement.Rotation; //Quaternion.Euler(new Vector3(0f, _controller.Orientation.ToEuler().z, 0f)); // _placement.Rotation; 
                 //_nextObj.transform.position = prevObjLoc.position;
+            }
+            else if (currCat == ERASER)
+            {
 
+                RaycastHit hit;
+                int layerMask = 1 << 8; 
+
+                // Does the ray intersect any objects excluding the player layer
+                if (Physics.Raycast(_controller.Position, (_controller.Orientation * Vector3.forward), out hit, Mathf.Infinity, layerMask))
+                {
+                    Debug.DrawRay(_controller.Position,  (_controller.Orientation * Vector3.forward) * hit.distance, Color.yellow);
+                    hitObject = hit.transform.GetComponentInChildren<PlacementObject>();
+                    Debug.Log("Did Hit");
+                }
+                else
+                    Debug.DrawRay(_controller.Position, (_controller.Orientation * Vector3.forward) * 100f, Color.red);
             }
 
             if(Input.GetKeyDown(KeyCode.N))
@@ -150,6 +171,12 @@ namespace MagicLeap
 
         private void HandleOnTriggerDown(byte controllerId, float pressure)
         {
+
+            if (currCat == ERASER && hitObject != null)
+            {
+                Destroy(hitObject.gameObject);
+            }
+               
             _placement.Confirm();
         }
 
@@ -196,6 +223,11 @@ namespace MagicLeap
 
                 Collider[] colliders = previewObject.GetComponents<Collider>();
 
+                if (colliders.Length == 0)
+                {
+                    colliders = previewObject.GetComponentsInChildren<Collider>();
+                }
+
                 for (int i = 0; i < colliders.Length; ++i)
                 {
                     colliders[i].enabled = false;
@@ -203,6 +235,11 @@ namespace MagicLeap
 
                 // Find the placement object.
                 PlacementObject placementObject = previewObject.GetComponent<PlacementObject>();
+
+                if (placementObject == null)
+                {
+                    placementObject = previewObject.GetComponentInChildren<PlacementObject>();
+                }
 
                 if (placementObject == null)
                 {
