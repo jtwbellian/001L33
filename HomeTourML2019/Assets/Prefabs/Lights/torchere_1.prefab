@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9135732214127590389}
   - component: {fileID: 142799210654763887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6585428481561952231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: torchere_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 4469301700472910772}
   - component: {fileID: 5916853415247597494}
   - component: {fileID: 786574004197317290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: base.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}

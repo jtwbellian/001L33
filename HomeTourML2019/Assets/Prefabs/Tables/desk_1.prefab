@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6217813915911709068}
   - component: {fileID: 5113431803218994133}
   - component: {fileID: 4874318445768882545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: base.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7803132988893537544}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: desk_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 806047477940155458}
   - component: {fileID: 4669898460991955423}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1276634830175450925}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: torchere_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 1276634830173025743}
   - component: {fileID: 348153848659735078}
   - component: {fileID: 3047711690213162422}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: plafond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: e768ff80065995849adf7e1e1cebe00d, type: 2}
-  - {fileID: 2100000, guid: 051ec947690563f4492787984cccd248, type: 2}
+  - {fileID: 2100000, guid: 28a9659fce0d23d4a922fef34958d5f7, type: 2}
   - {fileID: 2100000, guid: bc785957913e58d459e0c2b65b4df9bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

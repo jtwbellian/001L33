@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 4380129758584678387}
   - component: {fileID: 4809431005077048523}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: vase_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: adbdf79b90ebc734daaffcb276e8ea85, type: 2}
+  - {fileID: 2100000, guid: 6e6bbd893492e0943bb3b9bd17c68dda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

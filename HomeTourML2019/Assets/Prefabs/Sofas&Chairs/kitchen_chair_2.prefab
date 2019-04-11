@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6927227097771041535}
   - component: {fileID: 4971212220162063573}
   - component: {fileID: 206327866676705828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: seat004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6927227097773465631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: kitchen_chair_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

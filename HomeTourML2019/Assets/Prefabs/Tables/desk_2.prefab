@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3505372505001090650}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: desk_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6443117618805151345}
   - component: {fileID: 7905213834881829905}
   - component: {fileID: 2945777067960404158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: base.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,8 +90,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73438f8667fe74047a53cead93892ca3, type: 2}
-  - {fileID: 2100000, guid: 73438f8667fe74047a53cead93892ca3, type: 2}
+  - {fileID: 2100000, guid: ef0b4ca741a77fc46a04b8ab5cb778a6, type: 2}
+  - {fileID: 2100000, guid: 7ef5c04278a1d4346996d6837da9078a, type: 2}
   - {fileID: 2100000, guid: bc785957913e58d459e0c2b65b4df9bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2854438311901432037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: sofa_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 4295191099718841004}
   - component: {fileID: 2680018577654325910}
   - component: {fileID: 1226034306902057654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: seat.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,8 +90,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 051ec947690563f4492787984cccd248, type: 2}
-  - {fileID: 2100000, guid: 5ccc56ef523fe08499b7e33e252d78bc, type: 2}
+  - {fileID: 2100000, guid: 2d7b706e6617232489ba2d442f2674a1, type: 2}
+  - {fileID: 2100000, guid: 2d7b706e6617232489ba2d442f2674a1, type: 2}
   - {fileID: 2100000, guid: bc785957913e58d459e0c2b65b4df9bc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
