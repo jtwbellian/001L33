@@ -55,6 +55,7 @@ namespace MagicLeap
         private Placement _placement = null;
         private PlacementObject _placementObject = null;
         private PlacementObject hitObject = null;
+        private AudioSource audio = null;
 
         private int _placementIndex = 0;
         #endregion
@@ -74,6 +75,8 @@ namespace MagicLeap
 
             MLInput.OnControllerButtonDown += HandleOnButtonDown;
             MLInput.OnTriggerDown += HandleOnTriggerDown;
+
+            audio = GetComponent<AudioSource>();
 
             _controller = MLInput.GetController(MLInput.Hand.Left);
 
@@ -172,6 +175,8 @@ namespace MagicLeap
             }
                
             _placement.Confirm();
+
+            audio.Play();
         }
 
         private void HandlePlacementComplete(Vector3 position, Quaternion rotation)
