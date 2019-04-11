@@ -28,12 +28,14 @@ namespace MagicLeap
         private GameObject _willNotFitVolume = null;
 
         private Placement _placement = null;
+        private PlacementExample _placer = null;
         #endregion
 
         #region Unity Methods
         void Awake()
         {
             _placement = GetComponent<Placement>();
+            _placer = GetComponent<PlacementExample>();
 
             // Hide the visuals.
             _willFitVolume.SetActive(false);
@@ -55,14 +57,25 @@ namespace MagicLeap
         void Update()
         {
             // Position the volume visuals.
+            if (_placer.currCat == _placer.ERASER && (_willFitVolume.activeSelf || _willNotFitVolume.activeSelf))
+            {
+                _willFitVolume.SetActive(false);
+                _willNotFitVolume.SetActive(false);
+                return;
+            }
+
             _willFitVolume.transform.SetPositionAndRotation(_placement.AdjustedPosition, _placement.Rotation);
             _willNotFitVolume.transform.SetPositionAndRotation(_placement.AdjustedPosition, _placement.Rotation);
-        }
+
+         }
         #endregion
 
         #region Private Methods
         private void HandlePlacementBegin(GameObject obj)
         {
+            if (_placer.currCat == _placer.ERASER)
+                return;
+
             // Apply the volume scale.
             _willFitVolume.transform.localScale = _placement.Scale;
             _willNotFitVolume.transform.localScale = _placement.Scale;
@@ -70,6 +83,9 @@ namespace MagicLeap
 
         private void HandlePlacementEvent(FitType newFit)
         {
+            if (_placer.currCat == _placer.ERASER)
+                return;
+
             if (_placement.Fit == FitType.Fits)
             {
                 _willFitVolume.SetActive(true);

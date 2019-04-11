@@ -9,9 +9,11 @@
 // %COPYRIGHT_END%
 // ---------------------------------------------------------------------
 // %BANNER_END%
+using UnityEngine;//.XR.MagicLeap;
+using MagicLeap;
 
-namespace UnityEngine.XR.MagicLeap
-{
+
+//{
     /// <summary>
     /// Script used to position this Canvas object directly in front of the user by
     /// using lerp functionality to give it a smooth look. Components on the canvas
@@ -19,7 +21,7 @@ namespace UnityEngine.XR.MagicLeap
     /// </summary>
     [RequireComponent(typeof(Canvas))]
     public class HeadposeCanvas : MonoBehaviour
-    {
+{
         #region Public Variables
         [Tooltip("The distance from the camera that this object should be placed.")]
         public float CanvasDistance = 1.5f;
@@ -40,7 +42,7 @@ namespace UnityEngine.XR.MagicLeap
         // The camera this object will be in front of.
         private Camera _camera;
 
-        private MLInputController _controller;
+        public PlacementExample pe;
         #endregion
 
         #region Unity Methods
@@ -67,8 +69,6 @@ namespace UnityEngine.XR.MagicLeap
                 return;
             }
 
-
-            _controller = MLInput.GetController(MLInput.Hand.Left);
         }
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace UnityEngine.XR.MagicLeap
             Quaternion rotTo = Quaternion.LookRotation(transform.position - _camera.transform.position);
             transform.rotation = Quaternion.Slerp(transform.rotation, rotTo, rotSpeed);
 
-            if (_controller.IsBumperDown && instructions.activeSelf)
+            if (pe._controller.IsBumperDown && instructions.activeSelf)
             {
                 instructions.SetActive(false);
             }
@@ -95,4 +95,4 @@ namespace UnityEngine.XR.MagicLeap
         }
         #endregion
     }
-}
+//}
