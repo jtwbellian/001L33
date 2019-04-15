@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: mat_drywall
-  m_Shader: {fileID: -6465566751694194690, guid: a09d73c76d43ac847873c93c3255e43b,
+  m_Shader: {fileID: -6465566751694194690, guid: f205955076de3fd418791093915b4252,
     type: 3}
   m_ShaderKeywords: _METALLICSPECGLOSSMAP _NORMALMAP _SPECULAR_SETUP
   m_LightmapFlags: 4
