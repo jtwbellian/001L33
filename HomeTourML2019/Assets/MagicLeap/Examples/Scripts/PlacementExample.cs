@@ -89,8 +89,13 @@ namespace MagicLeap
             if (_placementObject != null)
             {
                 _placementObject.transform.root.position = _placement.AdjustedPosition - _placementObject.LocalBounds.center;
-                _placementObject.transform.root.rotation = _placement.Rotation; //Quaternion.Euler(new Vector3(0f, _controller.Orientation.ToEuler().z, 0f)); // _placement.Rotation; 
-                //_nextObj.transform.position = prevObjLoc.position;
+
+                if (_placementObject.AllowVertical)
+                {
+                    _placementObject.transform.root.rotation = _placement.Rotation * Quaternion.Euler(0f, 0f, 180f);
+                }
+                else
+                    _placementObject.transform.root.rotation = _placement.Rotation;
             }
             else if (currCat == ERASER)
             {
@@ -187,7 +192,12 @@ namespace MagicLeap
                 GameObject content = Instantiate(categories[currCat].prefabs[_placementIndex]);
 
                 content.transform.position = position;
-                content.transform.rotation = rotation;
+
+                if (_placementObject.AllowVertical)
+                    content.transform.rotation = rotation * Quaternion.Euler(0f, 0f, 180f);
+                else
+                    content.transform.rotation = rotation;
+
                 content.gameObject.SetActive(true);
 
                 _placement.Resume();
