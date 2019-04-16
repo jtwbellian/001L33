@@ -16,9 +16,9 @@ public class scr_room : MonoBehaviour
     void Start()
     {
         sm = scr_MLSpatialMapper.instance;
-        /*anim = GetComponent<Animator>();
+        anim = transform.root.GetComponentInChildren<Animator>();
         anim.SetBool("shut", true);
-
+/*
 
         foreach (GameObject o in sm.meshList)
         {
