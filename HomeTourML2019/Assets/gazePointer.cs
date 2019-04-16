@@ -6,14 +6,14 @@ public class gazePointer : MonoBehaviour
 {
 
     private GameObject hitObj;
-    public MLSpatialMapper sm;
+    public scr_MLSpatialMapper sm;
     private bool realWorldOpaque = true;
 
     // Start is called before the first frame update
     void Start()
     {
         if (sm ==null)
-            sm = MLSpatialMapper.instance;
+            sm = scr_MLSpatialMapper.instance;
     }
 
     // Update is called once per frame

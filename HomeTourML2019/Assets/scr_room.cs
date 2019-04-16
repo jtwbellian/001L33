@@ -8,18 +8,17 @@ using UnityEngine.XR.MagicLeap;
 public class scr_room : MonoBehaviour
 {
     public bool seen = false;
-    public MLSpatialMapper sm;
+    public scr_MLSpatialMapper sm;
     private Animator anim;
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        sm = scr_MLSpatialMapper.instance;
         /*anim = GetComponent<Animator>();
         anim.SetBool("shut", true);
 
-        sm = MLSpatialMapper.instance;
 
         foreach (GameObject o in sm.meshList)
         {
@@ -27,7 +26,7 @@ public class scr_room : MonoBehaviour
             mr.enabled = false;
         }*/
     }
-   
+
     public void Update()
     {
 

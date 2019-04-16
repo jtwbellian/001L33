@@ -1,6 +1,4 @@
 ﻿
-/*
-
 using System;
 using System.Runtime.InteropServices;
 using System.Collections;
@@ -20,9 +18,10 @@ using UnityEngine.XR.MagicLeap;
 
 [AddComponentMenu("AR/Magic Leap/ML Spatial Mapper")] 
 [UsesLuminPrivilege("WorldReconstruction")]
-public class MLSpatialMapper : MonoBehaviour
+public class scr_MLSpatialMapper : MonoBehaviour
 { 
     public List<GameObject> meshList;
+    public static scr_MLSpatialMapper instance;
     /// <summary>
     /// What type of mesh to generate: a triangle mesh or a point cloud
     /// </summary>
@@ -470,6 +469,8 @@ public class MLSpatialMapper : MonoBehaviour
 
     void Awake()
     {
+        instance = this;
+
         meshIdToGameObjectMap = new Dictionary<TrackableId, GameObject>();
         m_MeshesNeedingGeneration = new Dictionary<TrackableId, MeshInfo>();
         m_MeshesBeingGenerated = new Dictionary<TrackableId, MeshInfo>();
@@ -535,7 +536,7 @@ public class MLSpatialMapper : MonoBehaviour
 
     void SetLod()
     {
-        Api.UnityMagicLeap_MeshingSetLod(levelOfDetail);
+        Api.UnityMagicLeap_MeshingSetLod(UnityEngine.XR.MagicLeap.MLSpatialMapper.LevelOfDetail.Medium);
 #if UNITY_EDITOR
         m_CachedLod = levelOfDetail;
 #endif
@@ -870,4 +871,3 @@ internal static class Api
         public static void UnityMagicLeap_MeshingReleaseConfidence(TrackableId meshId) { }
 #endif
 }
-*/

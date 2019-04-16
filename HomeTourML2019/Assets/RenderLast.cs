@@ -41,7 +41,6 @@ public class RenderLast : MonoBehaviour
             foreach (Material mat in r.materials)
             {
                 SetOpaque(mat);
-                Debug.Log("updating renderer " + i + " / " + n);
                 i++;
             }
         }
@@ -51,7 +50,6 @@ public class RenderLast : MonoBehaviour
             foreach (Material mat in sr.materials)
             {
                 SetOpaque(mat);
-                Debug.Log("updating renderer " + i + " / " + n);
                 i++;
             }
         }

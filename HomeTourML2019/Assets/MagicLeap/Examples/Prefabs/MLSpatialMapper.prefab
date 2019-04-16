@@ -101,6 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4486541323493368}
+  - component: {fileID: 4347754376958230047}
   - component: {fileID: 114301182059694268}
   m_Layer: 0
   m_Name: MLSpatialMapper
@@ -124,7 +125,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114301182059694268
+--- !u!114 &4347754376958230047
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,6 +133,32 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923388488726986}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c0a936ce49d724180d003c33af597c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshList: []
+  m_MeshPrefab: {fileID: 1434253475793312}
+  m_ComputeNormals: 1
+  m_LevelOfDetail: 1
+  m_MeshParent: {fileID: 0}
+  m_MeshType: 0
+  m_FillHoleLength: 1
+  m_Planarize: 0
+  m_DisconnectedComponentArea: 0.25
+  m_MeshQueueSize: 4
+  m_PollingRate: 0.25
+  m_BatchSize: 16
+  m_RequestVertexConfidence: 0
+  m_RemoveMeshSkirt: 0
+--- !u!114 &114301182059694268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923388488726986}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2900a6968c451a44481c09cc0a260539, type: 3}
   m_Name: 
