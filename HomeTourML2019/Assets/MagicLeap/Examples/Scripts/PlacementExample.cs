@@ -14,6 +14,8 @@ using UnityEngine;
 using UnityEngine.XR.MagicLeap;
 using UnityEngine.UI;
 
+
+
 namespace MagicLeap
 {
     /// <summary>
@@ -31,31 +33,30 @@ namespace MagicLeap
         public Color color;
     }
 
+
+
     [RequireComponent(typeof(Placement))]
     public class PlacementExample : MonoBehaviour
     {
+        public int ERASER = 6;
+
         #region Private Variables
         [SerializeField, Tooltip("The controller that is used in the scene to cycle and place objects.")]
         private ControllerConnectionHandler _controllerConnectionHandler = null;
 
         [SerializeField, Tooltip("The placement objects that are used in the scene.")]
-
-
-        //public GameObject[] _placementPrefabs = null;
-
         public Category[] categories = null;
         public int currCat = 0;
 
         public Image categoryImage;
         public MeshRenderer cursorMesh;
 
-        //public Transform prevObjLoc = null;
-        //public Transform nextObjLoc = null;
-        private MLInputController _controller;
+        public MLInputController _controller;
         private Placement _placement = null;
         private PlacementObject _placementObject = null;
-        //private GameObject _previousObj = null;
-        //private GameObject _nextObj = null;
+        private PlacementObject hitObject = null;
+        private AudioSource audio = null;
+
         private int _placementIndex = 0;
         #endregion
 
@@ -75,6 +76,8 @@ namespace MagicLeap
             MLInput.OnControllerButtonDown += HandleOnButtonDown;
             MLInput.OnTriggerDown += HandleOnTriggerDown;
 
+            audio = GetComponent<AudioSource>();
+
             _controller = MLInput.GetController(MLInput.Hand.Left);
 
             StartPlacement();
@@ -85,10 +88,25 @@ namespace MagicLeap
             // Update the preview location, inside of the validation area.
             if (_placementObject != null)
             {
-                _placementObject.transform.position = _placement.AdjustedPosition - _placementObject.LocalBounds.center;
-                _placementObject.transform.rotation = _placement.Rotation;
+                _placementObject.transform.root.position = _placement.AdjustedPosition - _placementObject.LocalBounds.center;
+                _placementObject.transform.root.rotation = _placement.Rotation; //Quaternion.Euler(new Vector3(0f, _controller.Orientation.ToEuler().z, 0f)); // _placement.Rotation; 
                 //_nextObj.transform.position = prevObjLoc.position;
+            }
+            else if (currCat == ERASER)
+            {
 
+                RaycastHit hit;
+                int layerMask = 1 << 8; 
+
+                // Does the ray intersect any objects excluding the player layer
+                if (Physics.Raycast(_controller.Position, (_controller.Orientation * Vector3.forward), out hit, Mathf.Infinity, layerMask))
+                {
+                    Debug.DrawRay(_controller.Position,  (_controller.Orientation * Vector3.forward) * hit.distance, Color.yellow);
+                    hitObject = hit.transform.GetComponentInChildren<PlacementObject>();
+                    //Debug.Log("Did Hit");
+                }
+                else
+                    Debug.DrawRay(_controller.Position, (_controller.Orientation * Vector3.forward) * 100f, Color.red);
             }
 
             if(Input.GetKeyDown(KeyCode.N))
@@ -150,7 +168,15 @@ namespace MagicLeap
 
         private void HandleOnTriggerDown(byte controllerId, float pressure)
         {
+
+            if (currCat == ERASER && hitObject != null)
+            {
+                Destroy(hitObject.transform.root.gameObject);
+            }
+               
             _placement.Confirm();
+
+            audio.Play();
         }
 
         private void HandlePlacementComplete(Vector3 position, Quaternion rotation)
@@ -175,7 +201,7 @@ namespace MagicLeap
             // Destroy previous preview instance
             if (_placementObject != null)
             {
-                Destroy(_placementObject.gameObject);
+                Destroy(_placementObject.transform.root.gameObject);
                 //Destroy(_previousObj.gameObject);
                 //Destroy(_nextObj.gameObject);
             }
@@ -196,6 +222,11 @@ namespace MagicLeap
 
                 Collider[] colliders = previewObject.GetComponents<Collider>();
 
+                if (colliders.Length == 0)
+                {
+                    colliders = previewObject.GetComponentsInChildren<Collider>();
+                }
+
                 for (int i = 0; i < colliders.Length; ++i)
                 {
                     colliders[i].enabled = false;
@@ -206,7 +237,12 @@ namespace MagicLeap
 
                 if (placementObject == null)
                 {
-                    Destroy(previewObject);
+                    placementObject = previewObject.GetComponentInChildren<PlacementObject>();
+                }
+
+                if (placementObject == null)
+                {
+                    Destroy(previewObject.transform.root.gameObject);
                     //Destroy(previewNext);
                     //Destroy(previewPrevious);
                     Debug.LogError("Error: PlacementExample.placementObject is not set, disabling script.");
@@ -236,6 +272,10 @@ namespace MagicLeap
             if (categories[currCat].prefabs != null)
             {
                 _placementIndex++;
+
+                if (_placementIndex == ERASER)
+                    _placement.Scale.Set(0f, 0f, 0f);
+
                 if (_placementIndex >= categories[currCat].prefabs.Length)
                 {
                     _placementIndex = 0;
@@ -250,6 +290,9 @@ namespace MagicLeap
             if (categories[currCat].prefabs != null)
             {
                 _placementIndex --;
+
+                if (_placementIndex == ERASER)
+                    _placement.Scale.Set(0f, 0f, 0f);
 
                 if (_placementIndex <=0 )
                 {
