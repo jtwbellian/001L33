@@ -1,0 +1,8 @@
+<manifest xmlns:ml="magicleap" ml:developer_id="090afb36-efd8-424a-ab07-0b874de873e1" ml:package="com.binaristudios.hometourml" ml:version_code="1" ml:version_name="">
+  <application ml:min_api_level="2" ml:sdk_version="1.0" ml:visible_name="HomeTourML2019">
+    <uses-privilege ml:name="LowLatencyLightwear" />
+    <component ml:binary_name="bin/Player.elf" ml:name=".fullscreen" ml:type="Fullscreen" ml:visible_name="HomeTourML2019">
+      <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
+    </component>
+  </application>
+</manifest>

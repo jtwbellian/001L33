@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -30,7 +30,7 @@ public class gazePointer : MonoBehaviour
         {
             Debug.DrawRay(transform.position, (transform.rotation * Vector3.forward) * hit.distance, Color.yellow);
 
-            scr_room lastRoom = hit.transform.GetComponentInChildren<scr_room>();
+            lastRoom = hit.transform.GetComponentInChildren<scr_room>();
 
             lastRoom.OnSeen();
 

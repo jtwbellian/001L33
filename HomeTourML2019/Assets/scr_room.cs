@@ -17,7 +17,7 @@ public class scr_room : MonoBehaviour
     {
         sm = scr_MLSpatialMapper.instance;
         anim = transform.root.GetComponentInChildren<Animator>();
-        anim.SetBool("shut", true);
+        //anim.SetBool("shut", true);
 /*
 
         foreach (GameObject o in sm.meshList)
@@ -35,7 +35,7 @@ public class scr_room : MonoBehaviour
     public void OnSeen()
     {
         anim.SetBool("shut", false);
-        HideRealWorld();
+        //HideRealWorld();
         seen = true;
     }
 
@@ -43,14 +43,14 @@ public class scr_room : MonoBehaviour
     public void OnHidden()
     {
         anim.SetBool("shut", true);
-        ShowRealWorld();
+        //ShowRealWorld();
         seen = false;
     }
 
     public void HideRealWorld()
     {
 
-        Debug.Log("MeshRenderer Hidden");
+        //Debug.Log("MeshRenderer Hidden");
         foreach (GameObject o in sm.meshList)
         {
             MeshRenderer mr = o.GetComponent<MeshRenderer>();
@@ -60,7 +60,7 @@ public class scr_room : MonoBehaviour
 
     public void ShowRealWorld()
     {
-        Debug.Log("MeshRenderer Show");
+        //Debug.Log("MeshRenderer Show");
         foreach (GameObject o in sm.meshList)
         {
             MeshRenderer mr = o.GetComponent<MeshRenderer>();
