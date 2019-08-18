@@ -639,10 +639,10 @@ PlayerSettings:
     UNet: 1
   luminIcon:
     m_Name: 
-    m_ModelFolderPath: C:/Users/James/MagicLeap/binari_ML_ICON/model
-    m_PortalFolderPath: C:/Users/James/MagicLeap/binari_ML_ICON/portal
+    m_ModelFolderPath: 
+    m_PortalFolderPath: 
   luminCert:
-    m_CertPath: C:/Users/James/MagicLeap/archviz.cert
+    m_CertPath: C:/Users/James/Desktop/archviz/leaphome.cert
     m_SignPackage: 1
   luminIsChannelApp: 0
   luminVersion:

@@ -1,0 +1,290 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "C:/Users/James/MagicLeap/mlsdk/v0.21.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\James\\Desktop\\archviz\\leaphome.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "e2286ef07c8ea3f4e4d093b125b13a95132e7f88",
+   "xfrm_path": "D:/BinariStudios/001L33/HomeTourML2019/.out/.cache/debug_lumin_clang-3.8_aarch64/com.binaristudios.hometourml-e18623d2f939f687\\libc++_shared.so-e16bd2887213dd4d",
+   "xfrm_size": 977590
+  },
+  {
+   "compression": 8,
+   "hash": "d205d6d42f90db8d753cc8c9676f11342048dba5",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 4202004,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "d517a48c18a09c359f5de01ed94b6b2569bc852c",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 62876456,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\James\\Desktop\\archviz\\leaphome.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "5082063220ef9cb4a2824de8141d022cafe96238",
+   "xfrm_path": "D:/BinariStudios/001L33/HomeTourML2019/.out/.cache/debug_lumin_clang-3.8_aarch64/com.binaristudios.hometourml-e18623d2f939f687\\libil2cpp.so-3025f888da547ceb",
+   "xfrm_size": 62877214
+  },
+  {
+   "compression": 8,
+   "hash": "6b3b1067e8eeb28457c572292a209cc931e93089",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 269360,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\James\\Desktop\\archviz\\leaphome.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "07de3e91341e64d73980ba5b06b23dd3c6ea6cd9",
+   "xfrm_path": "D:/BinariStudios/001L33/HomeTourML2019/.out/.cache/debug_lumin_clang-3.8_aarch64/com.binaristudios.hometourml-e18623d2f939f687\\AudioPluginMSASpatializer.so-c73a91aecc7fefa7",
+   "xfrm_size": 270118
+  },
+  {
+   "compression": 8,
+   "hash": "28d6da6e5a2c19b0f74d7f05ed7552fd91fd61af",
+   "pkgpath": "bin/UnityEngine.TestRunner.dll",
+   "size": 100352,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Plugins/UnityEngine.TestRunner.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "59d035b177af853aa8ee2a78714391dae4657a36",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 1495008,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\James\\Desktop\\archviz\\leaphome.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "ad169f4ffbbe8ddb48931ab756ead10eae4577ba",
+   "xfrm_path": "D:/BinariStudios/001L33/HomeTourML2019/.out/.cache/debug_lumin_clang-3.8_aarch64/com.binaristudios.hometourml-e18623d2f939f687\\UnityMagicLeap.so-c73a91aecc7fefa7",
+   "xfrm_size": 1495766
+  },
+  {
+   "compression": 8,
+   "hash": "e36553e9a3113280d39db515a350a0036cda878d",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\James\\Desktop\\archviz\\leaphome.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "a09e2731aec2a5053df03ee437a1bb825622dab1",
+   "xfrm_path": "D:/BinariStudios/001L33/HomeTourML2019/.out/.cache/debug_lumin_clang-3.8_aarch64/com.binaristudios.hometourml-e18623d2f939f687\\libml_camera_plugin.so-c73a91aecc7fefa7",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "0ee8bd5ed3f83c8d11c84a597fb375ec525b0642",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 67624,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\James\\Desktop\\archviz\\leaphome.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "9bd6a65d892cc3b40773e81f3c1cc6ebf28f4868",
+   "xfrm_path": "D:/BinariStudios/001L33/HomeTourML2019/.out/.cache/debug_lumin_clang-3.8_aarch64/com.binaristudios.hometourml-e18623d2f939f687\\libml_mediaplayer_plugin.so-c73a91aecc7fefa7",
+   "xfrm_size": 68382
+  },
+  {
+   "compression": 8,
+   "hash": "984e4d2049ed5491b970ba15d1e8c8cadac0896e",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 339968,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "63c7ca62020949b1c87b1439f31b7a9719db98c1",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3652028,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "a8abea2cc328fc9cf58874a9606fb93e434f28d9",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 572164,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "10506c7e5f53e331db0e8c7c94047849df023433",
+   "pkgpath": "Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json",
+   "size": 176,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "c8a5a2cfca88ef91e9d65c250f2a761e6466a933",
+   "pkgpath": "Data/boot.config",
+   "size": 269,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "99afef867394fdac09de245429e4734feb796d55",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 49104,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "89cc00cf91a0faafb48f9396eb8722b9ec164e41",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 102272,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "9ed9ab42bc0cc54d2a94e4f650295fb884b26156",
+   "pkgpath": "Data/globalgamemanagers.assets.resS",
+   "size": 8003584,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/globalgamemanagers.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "6750975e9702c3129b88cd1d44cb3e0ccbbd9029",
+   "pkgpath": "Data/level0",
+   "size": 41144,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "2edce1f1fc1fba0903497652b8f0a5cb730f6f8c",
+   "pkgpath": "Data/resources.assets",
+   "size": 17528,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/resources.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "f4ce785d29d24c54555cb4aa9fed0d8d2dee1fad",
+   "pkgpath": "Data/resources.assets.resS",
+   "size": 360480,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/resources.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "3821f6a93a4aa25ae43abd07dd3c329ee84c012f",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 6792624,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "da43596b7e843af3a53f55a31522e1b1771253a1",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 317456032,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "3a644d9a93b6a40b6f379c0ab9536aab8d36a55b",
+   "pkgpath": "Data/sharedassets0.resource",
+   "size": 329920,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Data/sharedassets0.resource"
+  },
+  {
+   "compression": 8,
+   "hash": "ccbeb3dafa042b7b07c1418cc3c4695fb311c8dd",
+   "pkgpath": "bin/Player.elf",
+   "size": 47846992,
+   "src": "D:/BinariStudios/001L33/HomeTourML2019/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "C:\\Users\\James\\Desktop\\archviz\\leaphome.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "651ae852058ab79c3d4fc504412c261d8a3141ee",
+   "xfrm_path": "D:/BinariStudios/001L33/HomeTourML2019/.out/.cache/debug_lumin_clang-3.8_aarch64/com.binaristudios.hometourml-e18623d2f939f687\\Player.elf-a4c433a95fdf9842",
+   "xfrm_size": 47847750
+  },
+  {
+   "compression": 8,
+   "hash": "930caddbf380bea81e3b5b4d4ee5cb5abc90c7c2",
+   "pkgpath": "manifest.xml",
+   "size": 3459,
+   "src": "D:\\BinariStudios\\001L33\\HomeTourML2019\\Temp\\StagingArea\\manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "c0404115a1cec8de26b41ad46eafd3b3d04b1be6",
+     "developer_id": "00ef636b-3142-41ca-b8cf-e89365d7edaa"
+    }
+   },
+   "xfrm_hash": "30642c35b89dcae5d85ba9351dc7838d47c8aa1a",
+   "xfrm_path": "D:/BinariStudios/001L33/HomeTourML2019/.out/.cache/debug_lumin_clang-3.8_aarch64/com.binaristudios.hometourml-e18623d2f939f687\\manifest.xml-a4c433a95fdf9842",
+   "xfrm_size": 1174
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "C:\\Users\\James\\Desktop\\archviz\\leaphome.cert"
+  },
+  "taildata": {
+   "debuggable": true,
+   "devcert": "C:\\Users\\James\\Desktop\\archviz\\leaphome.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}

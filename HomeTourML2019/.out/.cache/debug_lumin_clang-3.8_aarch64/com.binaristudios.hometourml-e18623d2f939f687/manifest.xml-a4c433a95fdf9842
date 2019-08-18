@@ -1,0 +1,30 @@
+<manifest xmlns:ml="magicleap" ml:developer_id="00ef636b-3142-41ca-b8cf-e89365d7edaa" ml:package="com.binaristudios.hometourml" ml:version_code="1" ml:version_name="">
+  <application ml:min_api_level="4" ml:sdk_version="1.0" ml:visible_name="HomeTourML2019">
+    
+    <uses-privilege ml:name="AddressBookRead" />
+    
+    <uses-privilege ml:name="AddressBookWrite" />
+    
+    <uses-privilege ml:name="AudioCaptureMic" />
+    
+    <uses-privilege ml:name="CameraCapture" />
+    
+    <uses-privilege ml:name="GesturesSubscribe" />
+    
+    <uses-privilege ml:name="GesturesConfig" />
+    
+    <uses-privilege ml:name="Internet" />
+    
+    <uses-privilege ml:name="PwFoundObjRead" />
+    
+    <uses-privilege ml:name="ScreensProvider" />
+    
+    <uses-privilege ml:name="WorldReconstruction" />
+    
+    <uses-privilege ml:name="ControllerPose" />
+    <component ml:binary_name="bin/Player.elf" ml:name=".fullscreen" ml:type="Fullscreen" ml:visible_name="HomeTourML2019">
+      <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
+    </component>
+    <uses-privilege ml:name="LowLatencyLightwear" />
+  </application>
+</manifest>
